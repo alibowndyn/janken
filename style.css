@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFEA00;
+}
+
+#hand-container {
+    position: absolute;
+    top: 50px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.hand {
+    width:15%;
+    cursor: pointer;
+    transition: transform .1s;
+}
+
+.hand:hover {
+    transform: translateY(-20px);
+}
+
+.outcome {
+    position: absolute;
+    bottom: 170px;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.outcome > span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 170px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+.outcome > span > p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.outcome > span > img {
+    width: 40%;
+}
+
+#player > img
+{
+    transform: scaleX(-1);
+}
+
+.scores {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.scores > p
+{
+    margin: 3px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid #707cff;
+    border-radius: 15px;
+}
+
+#reset-btn {
+    position: absolute;
+    margin: 3px;
+    bottom: 40px;
+    left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 3px solid white;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 5px #EBD600;
+
+    transition: box-shadow .03s, transform .03s;
+}
+
+#reset-btn:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}

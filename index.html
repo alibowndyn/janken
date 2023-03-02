@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Janken</title>
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="hand-container">
+            <img class="hand" id="rock" src="./assets/rock.png" onclick="playHand(1)" draggable="false">
+            <img class="hand" id="paper" src="./assets/paper.png" onclick="playHand(2)" draggable="false">
+            <img class="hand" id="scissors" src="./assets/scissors.png" onclick="playHand(3)" draggable="false">
+        </div>
+
+        <div class="outcome">
+            <span id="player">
+                <p>YOU</p>
+                <img id="player-img" draggable="false">
+            </span>
+            <span id="cpu">
+                <p>CPU</p>
+                <img id="cpu-img" draggable="false">
+            </span>
+        </div>
+
+        <div class="scores">
+            <p id="wins">Wins: 0</p>
+            <p id="draws">Draws: 0</p>
+            <p id="losses">Losses: 0</p>
+        </div>
+        <div id="reset-btn" onclick="reset()">RESET</div>
+    </body>
+</html>
