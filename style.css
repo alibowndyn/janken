@@ -28,7 +28,7 @@ body {
 }
 
 .hand {
-    width:15%;
+    width: 15%;
     cursor: pointer;
     transition: transform .1s;
 }
