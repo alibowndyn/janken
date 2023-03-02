@@ -48,4 +48,3 @@ function reset() {
     document.getElementById("player").style.borderColor = "white";
     document.getElementById("cpu").style.borderColor = "white";
 }
-
