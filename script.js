@@ -3,8 +3,7 @@ const winConditions = [[1, 3], [2, 1], [3, 2]].map(x => x.toString());
 
 var wins = draws = losses = 0;
 
-function playHand(playerHand)
-{
+function playHand(playerHand) {
     /*
         ROCK     = 1
         PAPER    = 2
@@ -49,3 +48,4 @@ function reset() {
     document.getElementById("player").style.borderColor = "white";
     document.getElementById("cpu").style.borderColor = "white";
 }
+
